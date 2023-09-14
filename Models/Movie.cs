@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MovieAPI.Models
 {
-    [Table("Movie")]
+    [Table("Movie")]  //Table property used to define the table name 
     public class Movie
     {
         [Key]
