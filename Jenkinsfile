@@ -10,19 +10,19 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'dotnet build'
+                bat 'dotnet build'
             }
         }
         
         stage('Test') {
             steps {
-                sh 'dotnet test'
+                bat 'dotnet test'
             }
         }
         
         stage('Publish') {
             steps {
-                sh 'dotnet publish -c Release -o ./publish'
+                bat 'dotnet publish -c Release -o ./publish'
             }
         }
     }
